@@ -1,0 +1,19 @@
+.display {
+    border: lightseagreen solid 5px;
+    border-radius: 20px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valueStyle {
+    font-size: 80px;
+    color: white;
+}
+
+.disableStyle {
+    font-size: 80px;
+    color: red;
+}

@@ -1,0 +1,22 @@
+.counter {
+    border: lightseagreen solid 5px;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.boxForButtons {
+    border: lightseagreen solid 5px;
+    border-radius: 20px;
+    width: 600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
