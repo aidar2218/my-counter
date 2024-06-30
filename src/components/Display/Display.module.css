@@ -1,8 +1,8 @@
 .display {
     border: lightseagreen solid 5px;
     border-radius: 20px;
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 190px;
     display: flex;
     justify-content: center;
     align-items: center;

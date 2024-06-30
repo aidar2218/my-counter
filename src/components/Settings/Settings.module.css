@@ -1,4 +1,5 @@
-.counter {
+
+.settingsBox {
     border: lightseagreen solid 5px;
     width: 600px;
     height: 350px;
@@ -9,7 +10,7 @@
     flex-direction: column;
 }
 
-.boxForButtons {
+.buttonsBox {
     border: lightseagreen solid 5px;
     border-radius: 20px;
     width: 500px;
