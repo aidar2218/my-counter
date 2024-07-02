@@ -16,3 +16,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+#input {
+    border: lightseagreen solid 3px;
+    border-radius: 8px;
+}

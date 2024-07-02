@@ -10,10 +10,20 @@
 
 .valueStyle {
     font-size: 80px;
-    color: white;
+    color: #FFFFFF;
 }
 
 .disableStyle {
     font-size: 80px;
-    color: red;
+    color: #fd0000;
+}
+
+.displayInfoStyle {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.errorStyle {
+    font-size: 35px;
+    color: #fd0000;
 }
