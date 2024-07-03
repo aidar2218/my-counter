@@ -6,10 +6,9 @@ type ValuesPropsType = {
     startValue: number;
     saveNewMaxValue: (value: number) => void;
     saveNewStartValue: (value: number) => void;
-    error: boolean
 }
 
-export const Values = ({maxValue, startValue, saveNewMaxValue, saveNewStartValue, error}: ValuesPropsType) => {
+export const Values = ({maxValue, startValue, saveNewMaxValue, saveNewStartValue}: ValuesPropsType) => {
 
     const saveNewMaxValueHandler = (event: ChangeEvent<HTMLInputElement>) => {
         saveNewMaxValue(Number(event.currentTarget.value));
