@@ -26,8 +26,7 @@ export const Settings = ({
             <Values maxValue={maxValue}
                     startValue={startValue}
                     saveNewMaxValue={saveNewMaxValue}
-                    saveNewStartValue={saveNewStartValue}
-                    error={maxValue <= startValue || maxValue <= 0 || startValue < 0}/>
+                    saveNewStartValue={saveNewStartValue} />
             <div className={s.buttonsBox}>
                 <Button title={"set"}
                         onClick={setValuesCallback}
