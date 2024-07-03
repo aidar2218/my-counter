@@ -10,7 +10,6 @@ type SettingsPropsType = {
     saveNewStartValue: (value: number) => void
     disabledSetButton: boolean
     setValuesCallback: () => void
-    error: boolean
 }
 
 export const Settings = ({
@@ -20,7 +19,6 @@ export const Settings = ({
                              saveNewStartValue,
                              disabledSetButton,
                              setValuesCallback,
-                             error
 }: SettingsPropsType) => {
 
     return (
@@ -28,11 +26,12 @@ export const Settings = ({
             <Values maxValue={maxValue}
                     startValue={startValue}
                     saveNewMaxValue={saveNewMaxValue}
-                    saveNewStartValue={saveNewStartValue}/>
+                    saveNewStartValue={saveNewStartValue}
+                    error={maxValue <= startValue || maxValue <= 0 || startValue < 0}/>
             <div className={s.buttonsBox}>
                 <Button title={"set"}
                         onClick={setValuesCallback}
-                        disabled={disabledSetButton || error}/>
+                        disabled={disabledSetButton || maxValue <= startValue || maxValue <= 0 || startValue < 0} />
             </div>
         </div>
     );

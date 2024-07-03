@@ -11,21 +11,19 @@ type CounterPropsType = {
     incrementCount: () => void
     resetCount: () => void
     displayInfo: DisplayInfoType
-    error: boolean
 }
 
 export const Counter = ({
                             count, maxValue, startValue,
-                            incrementCount, resetCount, displayInfo,
-                            error}: CounterPropsType) => {
+                            incrementCount, resetCount, displayInfo
+                        }: CounterPropsType) => {
     return (
         <div className={s.counter}>
             <Display value={count}
                      disabled={count === maxValue}
                      displayInfo={displayInfo}
-                     error={error}
+                     error={maxValue <= startValue || maxValue < 0 || startValue < 0}/>
 
-            />
             <div className={s.boxForButtons}>
                 <Button title={"Inc"}
                         onClick={incrementCount}

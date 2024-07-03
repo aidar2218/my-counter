@@ -14,7 +14,6 @@ function App() {
     const [count, setCount] = useState<number>(0);
     const [disabledSetButton, setDisabledSetButton] = useState<boolean>(true);
     const [displayInfo, setDisplayInfo] = useState<DisplayInfoType>(null);
-    const [error, setError] = useState<boolean>(false);
 
     const incrementCount = () => {
         if (count < MAX_VALUE) {
@@ -31,10 +30,7 @@ function App() {
         setDisabledSetButton(false);
         setDisplayInfo("enter values and press \"set\"");
         if (MAX_VALUE === START_VALUE || MAX_VALUE < START_VALUE || MAX_VALUE === 0) {
-            setError(true);
             setDisplayInfo("Incorrect value!")
-        } else {
-            setError(false);
         }
     }
 
@@ -43,10 +39,7 @@ function App() {
         setDisabledSetButton(false);
         setDisplayInfo("enter values and press \"set\"");
         if (MAX_VALUE === START_VALUE || MAX_VALUE < START_VALUE || START_VALUE < 0) {
-            setError(true);
             setDisplayInfo("Incorrect value!")
-        } else {
-            setError(false);
         }
     }
 
@@ -67,7 +60,6 @@ function App() {
                       saveNewStartValue={saveNewStartValue}
                       disabledSetButton={disabledSetButton}
                       setValuesCallback={setValuesCallback}
-                      error={error}
             />
             <Counter count={count}
                      maxValue={MAX_VALUE}
@@ -75,7 +67,6 @@ function App() {
                      incrementCount={incrementCount}
                      resetCount={resetCount}
                      displayInfo={displayInfo}
-                     error={error}
             />
         </div>
     );

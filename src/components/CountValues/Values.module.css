@@ -17,7 +17,13 @@
     justify-content: space-evenly;
 }
 
-#input {
+.input {
     border: lightseagreen solid 3px;
+    border-radius: 8px;
+}
+
+.inputError {
+    border: #ff0000 solid 3px;
+    background-color: #f85d5d;
     border-radius: 8px;
 }
